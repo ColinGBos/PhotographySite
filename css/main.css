@@ -27,11 +27,6 @@ header {
     height: 100vh;
     overflow: hidden;
 }
-@media screen and (max-width: 500px) {
-    header {
-        height: 92vh;
-    }
-}
 @media screen 
     and (min-width: 1200px)
     and (min-resolution:192dpi) {
@@ -135,5 +130,8 @@ h2 {
     #wrapper:target {
         left: 50%;
         width: 100%;
+    }
+    header {
+        height: 92vh;
     }
 }
