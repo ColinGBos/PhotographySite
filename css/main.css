@@ -54,10 +54,12 @@ header {
 #mainNav ul li {
     padding: 10px 20px;
     transition: 0.2s;
+    border-left: solid 2px #222;
 }
 
 #mainNav ul li:hover {
-    background-color: #2b2b2b;
+    background-color: #1e1e1e;
+    border-left: solid 2px #fff;
 }
 
 #mainNav ul a {
@@ -130,8 +132,5 @@ h2 {
     #wrapper:target {
         left: 50%;
         width: 100%;
-    }
-    header {
-        height: 92vh;
     }
 }
