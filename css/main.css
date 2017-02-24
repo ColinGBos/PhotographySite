@@ -24,10 +24,14 @@ body {
 
 header {
     background: url("../images/headerBack_small.jpg") center center / cover no-repeat fixed;
-    height: 110vh;
+    height: 100vh;
     overflow: hidden;
 }
-
+@media screen and (max-width: 500px) {
+    header {
+        height: 92vh;
+    }
+}
 @media screen 
     and (min-width: 1200px)
     and (min-resolution:192dpi) {
