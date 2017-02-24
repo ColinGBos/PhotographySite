@@ -24,7 +24,7 @@ body {
 
 header {
     background: url("../images/headerBack_small.jpg") center center / cover no-repeat fixed;
-    height: 100vh;
+    height: 110vh;
     overflow: hidden;
 }
 
