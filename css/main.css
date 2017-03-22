@@ -65,6 +65,10 @@ a {
     padding: 10px 0 5px 0;
 }
 
+#contact .twoCol a, #contact .twoCol p, #contact h3 {
+    color: #eee;
+}
+
 /* Top Level */
 
 body {
@@ -201,7 +205,7 @@ header {
 .twoColParent {
     display: flex;
     padding: 80px 5vw;
-    background-color: #999;
+    background-color: #494949;
 }
 
 .twoCol {
