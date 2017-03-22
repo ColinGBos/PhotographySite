@@ -1,6 +1,71 @@
+/* Typography */
+
 html, h1,h2,h3,h4,h5,h6 {
-    font-family: "Raleway", "Lato", "Roboto", Helvetica, sans-serif;
+    font-family: "Lato", "Roboto", Helvetica, sans-serif;
 }
+
+h2 {
+    font-size: 40px;
+    font-weight: 300;
+    color: #eee;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 28px;
+    font-weight: 300;
+    color: #eee;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+h4, h5 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #eee;
+    margin-bottom: 5px;
+}
+
+h5 {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+p {
+    color: #eee;
+    font-weight: 400;
+    line-height: 1.5em;
+    font-size: 12pt;
+    padding-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #eee;
+}
+
+#services h3, #services p, #services a {
+    color: #333;
+}
+
+#services a {
+    padding: 5px;
+    border: 1.5px solid #333;
+}
+
+#services p {
+    padding-bottom: 40px;
+}
+
+#contact p, #contact h3 {
+    color: #222;
+}
+
+#contact p {
+    padding: 10px 0 5px 0;
+}
+
+/* Top Level */
 
 body {
     overflow-x: hidden;
@@ -14,6 +79,13 @@ body {
     top: 0;
     left: 0;
     transition: .5s ease;
+    background-color: #222;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .logo {
@@ -39,6 +111,8 @@ header {
     left: 20%;
     width: 80%;
 }
+
+/* Navigation */
 
 #mainNav {
     position: fixed;
@@ -94,31 +168,154 @@ header {
     text-decoration: none;
 }
 
-.fullHeightImage, .fullHeightColour {
-    height: 60vh;
-    text-align: center;
+/* Structure */
+
+.singleCol {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 100px 8vw;
     background-color: #222;
-    padding-top: 40vh;
 }
 
-.fullHeightImage {
-    background: url("../images/headerBack.jpg") center center / cover no-repeat fixed;
-    overflow: hidden;
+.threeColParent {
+    background-color: #ccc;
+    display: flex;
 }
 
-h2 {
-    font-size: 60px;
+.service {
+    padding: 80px 3vw;
+    transition: 0.3s;
+}
+
+.service:hover {
+    background-color: #d2d2d2;
+}
+
+.twoColParent {
+    display: flex;
+    padding: 80px 5vw;
+    background-color: #999;
+}
+
+.twoCol {
+    padding: 0 4vw;
+    text-align: left;
+    width: 100%;
+}
+
+input {
+    width: 80%;
+}
+
+input[type=submit] {
+    width: 80px;
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+    resize: none;
+}
+
+footer {
+    padding: 50px 5vw 100px 5vw;
+    text-align: left;
+}
+
+footer ul li {
+    display: inline-block;
+}
+
+footer .legalInfo {
+    line-height: 40px;
+    width: 60vw;
+    float: left;
+}
+
+footer .legalInfo p{
+    padding: 0 10px;
     font-weight: 300;
-    color: #fff;
 }
 
-#hero1 {
-    background-image: url("../images/hero1.jpg");
+footer .socialMedia {
+    width: 25vw;
+    float: right;
+    text-align: right;
 }
 
-#hero2 {
-    background-image: url("../images/hero2.jpg");
+footer img {
+    width: 3vw;
+    margin: 0 2px;
 }
+
+/* Gallery */
+
+#gallery {
+    padding: 80px 5vw;
+}
+
+.galleryContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.galleryContainer figure {
+    width: 21%;
+    margin: 2%;
+    position: relative;
+}
+
+.galleryContainer figure img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    filter: brightness(1.0) opacity(1.0);
+    transition: 0.2s;
+}
+.galleryContainer figure:hover img{
+    filter: brightness(1.5) opacity(0.4);
+}
+
+.galleryContainer figure figcaption {
+    position: relative;
+    top: 0;
+    padding: 26% 0;
+    transition: 0.2s;
+    opacity: 0.0;
+}
+.galleryContainer figure:hover figcaption {
+    opacity: 1.0;
+}
+
+#gallery ul {
+    margin: 40px 0;
+}
+
+#gallery ul li {
+    display: inline-block;
+}
+
+#gallery .filter-button {
+    padding: 8px 12px;
+    margin: 0 10px;
+    background-color: #ddd;
+    border: none;
+    font-family: "Lato";
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#gallery .filter-button:hover {
+    background-color: #c5c5c5;
+    color: #222;
+}
+
+#gallery .filter-button.is-checked {
+    background-color: #666;
+    color: #ddd;
+}
+
 
 @media screen 
     and (min-width:650px)
@@ -127,10 +324,82 @@ h2 {
         left: 35%;
         width: 65%;
     }
+        
+    .galleryContainer figure {
+        width: 46%;
+        margin: 2%;
+        position: relative;
+    }
+        
+
 }
 @media screen and (max-width:650px) {
     #wrapper:target {
         left: 50%;
         width: 100%;
+    }
+    
+    .threeColParent {
+        background-color: #ccc;
+        display: block;
+    }
+
+    .service {
+        padding: 80px 10vw;
+        transition: 0.3s;
+    }
+    
+    .twoColParent {
+        display: block;
+        padding: 40px 5vw;
+        background-color: #999;
+    }
+    
+    .twoCol {
+        padding: 0 4vw;
+        text-align: left;
+        width: 90%;
+        margin-top: 40px;
+    }
+    
+    .galleryContainer figure {
+        width: 100%;
+        margin: 4% 2%;
+        position: relative;
+    }
+    
+    .galleryContainer figure figcaption {
+        position: relative;
+        top: 0;
+        padding: 29% 0;
+        transition: 0.2s;
+        opacity: 0.0;
+    }
+    
+    footer ul li {
+    display: inline-block;
+    }
+
+    footer .legalInfo {
+        line-height: 40px;
+        width: 100%;
+        float: right;
+    }
+
+    footer .legalInfo p{
+        padding: 0 10px;
+        font-weight: 300;
+    }
+
+    footer .socialMedia {
+        width: 100%;
+        float: left;
+        text-align: center;
+        margin: 50px 0;
+    }
+
+    footer img {
+        width: 10vw;
+        margin: 0 5px;
     }
 }

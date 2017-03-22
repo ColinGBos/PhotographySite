@@ -9,10 +9,10 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
         
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500" rel="stylesheet">
 
         <script src="js/modernizr-custom.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="js/main.js"></script>
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
@@ -21,10 +21,9 @@
             <ul>
                 <a href="#!" class="closeButton"><li>Close</li></a>
                 <a href="javascript:void(0);"><li>Home</li></a>
-                <a href="javascript:void(0);"><li>About</li></a>
-                <a href="javascript:void(0);"><li>Contact</li></a>
-                <a href="javascript:void(0);"><li>Gallery</li></a>
-                <a href="javascript:void(0)"><li>Test</li></a>
+                <a href="#aboutUs"><li>About</li></a>
+                <a href="#contact"><li>Contact</li></a>
+                <a href="#gallery"><li>Gallery</li></a>
             </ul>
         </nav>
         <div id="wrapper">
@@ -41,18 +40,223 @@
                 </figure>
                 <a href="#section2" class="downArrow">v</a>
             </header>
-            <section id="section2" class="fullHeightColour">
-                <h2>Dis is text.</h2>
+            <section id="aboutUs" class="singleCol">
+                <h2>Who We Are</h2>
+                <p>
+                    Full Exposure Photography is a photography studio that simply hopes to share our love of the art with the world. We are three retired gentlement who have over 50 years of professional photography experience between us.
+                </p>
+                <p>       
+                    Growing up with far less resources than the people of this generation, we want to do a bit to share some of our work. It is our hope that people will see our work and be inspired to share their work and grow as photographers.
+                </p>
+                <p>
+                    We wish to provide resources, tutorials, and some sample photography but we also have an online shop for anyone who wants to support us and hang up our work.
+                </p>
             </section>
-            <section class="fullHeightImage" id="hero1">
-                <h2>Dis is picture.</h2>
+            <section id="services" class="threeColParent clearfix">
+                <div class="service">
+                    <h3>Landscape</h3>
+                    <p>We have been capturing landscapes all around Canada and the rest of the world for years, enjoy browsing through our collections of work. Prints, calenders and more available&#33;</p>
+                    <a href="javascript:void(0);">Read More</a>
+                </div>
+                <div class="service">
+                    <h3>Nature</h3>
+                    <p>Besides holding immense mountains and sunsets in our frames, we also enjoy getting up close and personal with nature and all it has to show off. Check out some of the wildlife we've seen.</p>
+                    <a href="javascript:void(0);">Read More</a>
+                </div>
+                <div class="service">
+                    <h3>Urban</h3>
+                    <p>Getting closer to home, the habitat of the metropolitan city-dweller interests us as much as the great outdoors does. Cities, streets and sidewalks can't escape our lenses&#33;</p>
+                    <a href="javascript:void(0);">Read More</a>
+                </div>
             </section>
-            <section class="fullHeightColour">
-                <h2>Dis is more text.</h2>
+            <section id="gallery" class="gallery clearfix">
+                <h2>Gallery</h2>
+                <ul>
+                    <li><button id="all-button" class="filter-button is-checked" onclick="filter(0)">All</button></li>
+                    <li><button id="landscape-button" class="filter-button" onclick="filter(1)">Landscape</button></li>
+                    <li><button id="nature-button" class="filter-button" onclick="filter(2)">Nature</button></li>
+                    <li><button id="urban-button" class="filter-button" onclick="filter(3)">Urban</button></li>
+                </ul>
+                <div class="galleryContainer">
+                    <figure class="galleryItem nature">
+                        <img src="images/gallery/thumbnails/gallery-1.jpg" alt="">
+                        <figcaption>
+                            <h4>Grey Wolf</h4>
+                            <h5>Nov 2015</h5>
+                        </figcaption>
+                    </figure>
+                    <figure class="galleryItem urban">
+                        <img src="images/gallery/thumbnails/gallery-2.jpg" alt="">
+                        <figcaption>
+                            <h4>Vatican</h4>
+                            <h5>July 2015</h5>
+                        </figcaption>
+                    </figure>
+                    <figure class="galleryItem landscape">
+                        <img src="images/gallery/thumbnails/gallery-3.jpg" alt="">
+                        <figcaption>
+                            <h4>Awenda Beach</h4>
+                            <h5>Sept 2015</h5>
+                        </figcaption>
+                    </figure>
+                    <figure class="galleryItem urban">
+                        <img src="images/gallery/thumbnails/gallery-4.jpg" alt="">
+                        <figcaption>
+                            <h4>Venice</h4>
+                            <h5>Sept 2015</h5>
+                        </figcaption>
+                    </figure>
+                    <figure class="galleryItem urban">
+                        <img src="images/gallery/thumbnails/gallery-5.jpg" alt="">
+                        <figcaption>
+                            <h4>Venice</h4>
+                            <h5>Nov 2015</h5>
+                        </figcaption>
+                    </figure>
+                    <figure class="galleryItem landscape">
+                        <img src="images/gallery/thumbnails/gallery-6.jpg" alt="">
+                        <figcaption>
+                            <h4>Miami</h4>
+                            <h5>June 2015</h5>
+                        </figcaption>
+                    </figure>
+                    <figure class="galleryItem urban">
+                        <img src="images/gallery/thumbnails/gallery-7.jpg" alt="">
+                        <figcaption>
+                            <h4>Miami</h4>
+                            <h5>July 2015</h5>
+                        </figcaption>
+                    </figure>
+                    <figure class="galleryItem landscape">
+                        <img src="images/gallery/thumbnails/gallery-8.jpg" alt="">
+                        <figcaption>
+                            <h4>Banff</h4>
+                            <h5>Aug 2016</h5>
+                        </figcaption>
+                    </figure>
+                    <figure class="galleryItem landscape">
+                        <img src="images/gallery/thumbnails/gallery-9.jpg" alt="">
+                        <figcaption>
+                            <h4>Banff</h4>
+                            <h5>Oct 2016</h5>
+                        </figcaption>
+                    </figure>
+                    <figure class="galleryItem urban">
+                        <img src="images/gallery/thumbnails/gallery-10.jpg" alt="">
+                        <figcaption>
+                            <h4>Vatican</h4>
+                            <h5>July 2015</h5>
+                        </figcaption>
+                    </figure>
+                    <figure class="galleryItem nature">
+                        <img src="images/gallery/thumbnails/gallery-11.jpg" alt="">
+                        <figcaption>
+                            <h4>Algonquin</h4>
+                            <h5>Nov 2015</h5>
+                        </figcaption>
+                    </figure>
+                    <figure class="galleryItem landscape">
+                        <img src="images/gallery/thumbnails/gallery-12.jpg" alt="">
+                        <figcaption>
+                            <h4>Guelph</h4>
+                            <h5>Sept 2015</h5>
+                        </figcaption>
+                    </figure>
+                    <figure class="galleryItem landscape">
+                        <img src="images/gallery/thumbnails/gallery-13.jpg" alt="">
+                        <figcaption>
+                            <h4>Peggy's Cove</h4>
+                            <h5>May 2015</h5>
+                        </figcaption>
+                    </figure>
+                    <figure class="galleryItem nature landscape">
+                        <img src="images/gallery/thumbnails/gallery-14.jpg" alt="">
+                        <figcaption>
+                            <h4>Yellowknife</h4>
+                            <h5>Feb 2017</h5>
+                        </figcaption>
+                    </figure>
+                    <figure class="galleryItem landscape">
+                        <img src="images/gallery/thumbnails/gallery-15.jpg" alt="">
+                        <figcaption>
+                            <h4>Everest</h4>
+                            <h5>Oct 2016</h5>
+                        </figcaption>
+                    </figure>
+                    <figure class="galleryItem landscape">
+                        <img src="images/gallery/thumbnails/gallery-16.jpg" alt="">
+                        <figcaption>
+                            <h4>Awenda Beach</h4>
+                            <h5>Sept 2015</h5>
+                        </figcaption>
+                    </figure>
+                    <figure class="galleryItem urban">
+                        <img src="images/gallery/thumbnails/gallery-17.jpg" alt="">
+                        <figcaption>
+                            <h4>Toronto</h4>
+                            <h5>July 2016</h5>
+                        </figcaption>
+                    </figure>
+                    <figure class="galleryItem nature landscape">
+                        <img src="images/gallery/thumbnails/gallery-18.jpg" alt="">
+                        <figcaption>
+                            <h4>Killarney</h4>
+                            <h5>May 2016</h5>
+                        </figcaption>
+                    </figure>
+                    <figure class="galleryItem urban">
+                        <img src="images/gallery/thumbnails/gallery-19.jpg" alt="">
+                        <figcaption>
+                            <h4>Toronto</h4>
+                            <h5>Feb 2016</h5>
+                        </figcaption>
+                    </figure>
+                    <figure class="galleryItem landscape">
+                        <img src="images/gallery/thumbnails/gallery-20.jpg" alt="">
+                        <figcaption>
+                            <h4>Miami</h4>
+                            <h5>June 2015</h5>
+                        </figcaption>
+                    </figure>
+                </div>
             </section>
-            <section class="fullHeightImage" id="hero2">
-                <h2>Dis is more picture.</h2>
+            <section id="contact">
+                <div class="twoColParent">
+                    <div class="twoCol">
+                        <h3>We Love Sharing</h3>
+                        <p>We want to hear about your endeavors, we want to explore the work you've done! We also love hearing about how what we've done has influenced you and your passion, how we've potentially inspired you. Share your work with us, yout adventures with us and tell us what you liked of our photography.</p>
+                    </div>
+                    <div class="twoCol">
+                        <h3>Contact Form</h3>
+                        <address>
+                            <a href="mailto:colin.g.bos@gmail.com">hello&#64;fullexposure.com</a>
+                        </address>
+                        <form action="mailto:hello@elysianstudios.xyz" method="post" enctype="text/plain">
+                            <p>Name:</p>
+                            <input type="text" name="name">
+                            <p>Email:</p>
+                            <input type="text" name="mail">
+                            <p>Comment:</p>
+                            <textarea name="content"></textarea>
+                            <input type="submit" value="Submit">
+                        </form> 
+                    </div>
+                </div>
             </section>
+            <footer>
+                <ul class="legalInfo">
+                    <li><p>Full Exposure Photography</p></li>
+                    <li><p>&copy; Copyright 2017</p></li>
+                    <li><p>All Rights Reserved</p></li>
+                </ul>
+                <ul class="socialMedia">
+                    <li><a href="javascript:void(0);"><img src="images/icons/01_twitter.png"></a></li>
+                    <li><a href="javascript:void(0);"><img src="images/icons/02_facebook.png"></a></li>
+                    <li><a href="javascript:void(0);"><img src="images/icons/10_instagram.png"></a></li>
+                    <li><a href="javascript:void(0);"><img src="images/icons/15_tumblr.png"></a></li>
+                    <li><a href="javascript:void(0);"><img src="images/icons/21_blogger.png"></a></li>
+                </ul>
+            </footer>
         </div>
     </body>
 </html>
