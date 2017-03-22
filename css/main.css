@@ -91,7 +91,7 @@ body {
 .logo {
     width: 40vh;
     height: 40vh;
-    margin: 20vh auto 15vh auto;
+    margin: 20vh auto 12vh auto;
 }
 
 header {
@@ -337,6 +337,14 @@ footer img {
     #wrapper:target {
         left: 50%;
         width: 100%;
+    }
+    
+    header {
+        height: 90vh;
+    }
+    
+    .logo {
+        margin: 20vh auto 8vh auto;
     }
     
     .threeColParent {
