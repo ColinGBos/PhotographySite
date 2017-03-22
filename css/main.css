@@ -376,6 +376,16 @@ footer img {
         opacity: 0.0;
     }
     
+    #gallery .filter-button {
+        padding: 8px 10px;
+        margin: 2px 5px;
+        background-color: #ddd;
+        border: none;
+        font-family: "Lato";
+        font-size: 14px;
+        cursor: pointer;
+    }
+    
     footer ul li {
     display: inline-block;
     }
