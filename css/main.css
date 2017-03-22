@@ -99,6 +99,7 @@ header {
     height: 100vh;
     overflow: hidden;
 }
+
 @media screen 
     and (min-width: 1200px)
     and (min-resolution:192dpi) {
@@ -189,6 +190,7 @@ header {
 
 .service:hover {
     background-color: #d2d2d2;
+    box-shadow: 0px 0px 15px 0px #222;
 }
 
 .twoColParent {
@@ -248,6 +250,10 @@ footer img {
     margin: 0 2px;
 }
 
+footer img:hover {
+    filter: brightness(1.2);
+}
+
 /* Gallery */
 
 #gallery {
@@ -272,9 +278,12 @@ footer img {
     top: 0;
     filter: brightness(1.0) opacity(1.0);
     transition: 0.2s;
+    box-shadow: 0px 0px 20px 5px #181818;
 }
+
 .galleryContainer figure:hover img{
     filter: brightness(1.5) opacity(0.4);
+    box-shadow: 0px 0px 20px 5px #000;
 }
 
 .galleryContainer figure figcaption {
