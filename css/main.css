@@ -149,6 +149,11 @@ header {
     font-weight: 300;
 }
 
+#navMenu {
+    display: block;
+    width: 40px;
+}
+
 .hamburger {
     width: 40px;
     height: 44px;
